@@ -1,76 +1,128 @@
-# Monagex MERN App
+# MonageX - Smart Expense Tracker
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [System Architecture](#system-architecture)
-- [Pages and Descriptions](#pages-and-descriptions)
-- [Technologies Used](#technologies-used)
-- [Screenshots](#screenshots)
+MonageX is a **MERN-based** expense tracker designed to simplify financial management. Effortlessly track income, expenses, and transfers while gaining insights through interactive charts. Collaborate with friends, split expenses, and settle debts seamlessly.
 
-## Introduction
-The Expense Tracker MERN App is a comprehensive financial management tool designed to help users effectively manage their finances. Users can track their income, expenses, and transfers with ease, gaining insights through visual representations such as pie charts. The app facilitates seamless bill splitting among friends and enables users to settle debts effortlessly. Users can view detailed information about who owes them and whom they owe, enhancing transparency and simplifying financial interactions.
+---
 
-## Features
-- **Expense Tracking**: Track your income, expenses, and transfers.
-- **Pie Charts**: Visualize income, expenses, and transfers individually through pie charts.
-- **Split and Settle**: Split bills with friends and settle debts easily. Notifications are sent to involved users via NodeMailer when a split or settle action is made.
-- **Simplify Debts**: Manage and simplify debts, making it easy to keep track of who owes whom. This feature minimizes the number of transactions needed to settle debts, optimizing financial interactions.
-- **Transaction History**: View a detailed history of all transactions, including splits and settlements.
-- **Authentication**: Secure user authentication using JSON Web Tokens (JWT).
-- **Friend Requests and Groups**: Connect with other users through friend requests and form groups to manage shared expenses.
+## 🚀 Features
 
-## System Architecture
-The Expense Tracker MERN App follows a client-server architecture:
-- **Front-end**: Built with React, and Chart.js for dynamic and responsive user interfaces.
-- **Back-end**: Developed using Node.js and Express.js. It provides APIs for user authentication, expense tracking, and debt management, with JWT for secure authentication and NodeMailer for sending notifications.
-- **Database**: MongoDB with Mongoose, a NoSQL database, stores user data, transaction details, and financial information.
+- 📊 **Expense Tracking** – Log income, expenses, and transfers effortlessly.
+- 📈 **Interactive Pie Charts** – Get a clear breakdown of finances.
+- 🤝 **Split & Settle Bills** – Share expenses with friends and manage settlements.
+- 🔄 **Debt Simplification** – Minimize transactions for easy settlements.
+- 🔐 **Secure Authentication** – JSON Web Tokens (JWT) for user security.
+- 🗃️ **Transaction History** – Keep track of all transactions with timestamps.
+- 👥 **Friends & Groups** – Add friends, form groups, and manage shared expenses.
+- ✉️ **Email Notifications** – Get updates when bills are split or settled.
 
-## Pages and Descriptions
-- **Sign Up / Login Page**: User authentication and registration.
-- **Home Page**: Dashboard overview of financial status and quick access to key features.
-- **Profile Page**: Manage user profile information and settings.
-- **Recording Expenses Page**: Record income, expenses, and transfers with categorization options.
-- **Expense Showing Page**: Display and analyze recorded expenses with pie charts.
-- **Split/Settle Page**: Manage shared expenses, view who owes whom, settle debts, and review transaction history. Includes an option to simplify debts for streamlined financial management.
-- **Friends Page**: Manage friend requests, connections, and view friends list.
-- **Groups Page**: Create and manage groups for shared expenses, add members, and settle debts within groups.
+---
 
-## Technologies Used
-- **Frontend**: React, Chart.js, MaterialUI
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB, Mongoose
-- **Other Tools**: Axios, Bcrypt, dotenv, Nodemailer
+## 🛠 Tech Stack
 
-## Screenshots
-Add screenshots of the app pages to provide visual context:
+| **Frontend**  | **Backend** | **Database**  | **Other Tools**  |
+|--------------|------------|--------------|----------------|
+| React  | Node.js  | MongoDB  | Axios  |
+| Chart.js  | Express.js  | Mongoose  | Bcrypt  |
+| Material-UI  | Nodemailer  | dotenv  | JWT  |
 
-- **Sign Up / Login Page**
-  ![Sign Up / Login Page](Screenshots/Signup.png)
-  ![Sign Up / Login Page](Screenshots/Login.png)
+---
 
+## 📌 System Overview
 
-- **Home Page**
-  ![Home Page](Screenshots/Home.png)
+MonageX follows a **client-server architecture**:
+- **Frontend**: React with Chart.js for visualization.
+- **Backend**: Node.js & Express.js handle authentication, transactions, and debt management.
+- **Database**: MongoDB with Mongoose for storing user, transaction, and financial data.
 
-- **Profile Page**
-  ![Profile Page](Screenshots/Profile.png)
+---
 
-- **Recording Expenses Page**
-  ![Recording Expenses Page](Screenshots/Record%20Transaction.png)
+## 📱 Screens & Pages
 
-- **Expense Showing Page**
-  ![Expense Showing Page](Screenshots/View%20Transactions_1.png)
-  ![Expense Showing Page](Screenshots/View%20Transactions_2.png)
+| Page | Description |
+|------|------------|
+| **🔑 Sign Up / Login** | Secure authentication & registration. |
+| **🏠 Home** | Dashboard with a financial summary. |
+| **👤 Profile** | Manage user details & settings. |
+| **💰 Record Expenses** | Log income, expenses & transfers. |
+| **📊 View Expenses** | Analyze finances with interactive charts. |
+| **🤝 Split & Settle** | Manage shared expenses & simplify debts. |
+| **👥 Friends** | Add & manage friends for tracking shared expenses. |
+| **👨‍👩‍👧 Groups** | Create and manage groups for shared expenses. |
 
+---
 
-- **Split/Settle Page**
-  ![Split/Settle Page](Screenshots/Split:Settle_1.png)
-  ![Split/Settle Page](Screenshots/Split:Settle_2.png)
+## 🖼 Screenshots
 
+### **Authentication**
+![Signup](Screenshots/Signup.png) ![Login](Screenshots/Login.png)
 
-- **Friends Page**
-  ![Friends Page](Screenshots/Friends.png)
+### **Dashboard & Transactions**
+![Home](Screenshots/Home.png)  
+![View Transactions](Screenshots/View%20Transactions_1.png) ![View Transactions](Screenshots/View%20Transactions_2.png)
 
-- **Groups Page**
-  ![Groups Page](Screenshots/Groups.png)
+### **Split & Settle**
+![Split/Settle](Screenshots/Split:Settle_1.png) ![Split/Settle](Screenshots/Split:Settle_2.png)
+
+### **Friends & Groups**
+![Friends](Screenshots/Friends.png)  
+![Groups](Screenshots/Groups.png)
+
+---
+
+## 🏰 Getting Started
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/monagex.git
+   ```
+2. Install dependencies:
+   ```sh
+   cd monagex
+   npm install
+   ```
+3. Start the backend server:
+   ```sh
+   cd backend
+   npm start
+   ```
+4. Start the frontend:
+   ```sh
+   cd frontend
+   npm start
+   ```
+
+---
+
+## 🔑 Dummy Login Credentials
+
+Use the following test credentials to explore MonageX:
+
+- **Email:** `hardik@gmail.com`
+- **Password:** `Hardik@123`
+
+*Note:* These are sample credentials. You can also create a new account during testing.
+
+---
+
+## 💎 Contact
+
+For queries, feature requests, or bug reports, feel free to reach out:
+
+📧 Email: [monagexteam@gmail.com](mailto:monagexteam@gmail.com)  
+
+---
+
+## 💡 Future Enhancements
+
+- **Budget Planning** – Set monthly budgets and get spending alerts.
+- **Recurring Expenses** – Automate rent, subscriptions, and bills.
+- **Dark Mode** – User-friendly UI with theme toggling.
+
+---
+
+## 📜 License
+
+This project is **open-source** and available under the MIT License.
+
+🌟 *Happy Expense Tracking!* 🌟
+
